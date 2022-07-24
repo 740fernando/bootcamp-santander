@@ -1,0 +1,12 @@
+package com.bookstore.service;
+
+import com.bookstore.model.Book;
+
+
+public interface BookService {
+	Book getBookList();
+	Book getBookId(Long id);
+	Book createBook(Book request);
+	Book updateBook(Long id, Book request);
+	Book deleteBook(Long id);
+}
